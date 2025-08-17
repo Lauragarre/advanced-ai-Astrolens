@@ -1,0 +1,6 @@
+tensorflow
+astroNN
+numpy
+pandas
+matplotlib
+scikit-learn

@@ -1,37 +1,23 @@
-# AstroLens: Explorador Inteligente del Universo con Visión Artificial
+# AstroLens: Intelligent Universe Explorer with AI
 
-**Objetivo:** Clasificar imágenes astronómicas (galaxias, estrellas, nebulosas) con Deep Learning usando el dataset **Galaxy10 DECaLS** y establecer una base para ampliar con detección y clustering.
+AstroLens is a project that applies **Deep Learning and Computer Vision** to classify astronomical images into different categories (galaxies, stars, nebulae, etc.).  
+It serves as a first step toward a broader system capable of **object detection, clustering, and automated descriptions** of celestial images.
 
-## 🚀 Quickstart (Colab recomendado)
-1. Abre este repo en Google Colab y ejecuta el notebook `notebooks/01_EDA_preprocessing_and_CNN.ipynb`.
-2. El dataset **Galaxy10 DECaLS** se descargará automáticamente vía `astroNN` la primera vez que ejecutes el notebook.
-3. Revisa la sección de _Resultados preliminares_ al final del notebook (accuracy y ejemplos de predicción).
+---
 
-## 📦 Estructura
-```
-AstroLens/
-├─ notebooks/
-│  └─ 01_EDA_preprocessing_and_CNN.ipynb
-├─ data/           # (opcional) materiales locales
-├─ models/         # modelos guardados
-├─ technical_report.md
-├─ requirements.txt
-└─ README.md
-```
+## Objectives
+- Build a Convolutional Neural Network (CNN) to classify galaxies from real telescope data.
+- Explore extensions such as **clustering embeddings**, **object detection** (YOLO/DETR), and **LLM-based descriptions**.
+- Provide a reproducible pipeline that can be executed in **Google Colab**.
 
-## 🧰 Dependencias principales
-- TensorFlow (Keras)
-- astroNN (para descargar Galaxy10 DECaLS fácilmente)
-- numpy, pandas, matplotlib, scikit-learn
+---
 
-Instalación local (opcional):
+## Requirements
+Main dependencies:
+- TensorFlow / Keras
+- astroNN (dataset loader for Galaxy10 DECaLS)
+- NumPy, Pandas, Matplotlib, scikit-learn
+
+Install locally (optional):
 ```bash
 pip install -r requirements.txt
-```
-
-## 🧪 Próximos pasos (para la versión de presentación)
-- Extraer _embeddings_ de la CNN y aplicar **KMeans** para clustering.
-- Probar **YOLO/DETR** para detección (opcional).
-- Generar descripciones con un **LLM** (opcional).
-- Añadir una demo con **Streamlit** (opcional).
-# advanced-ai-Astrolens
